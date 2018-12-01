@@ -1,6 +1,6 @@
 # NahLoadingTool
 
-implementation 'com.github.joelnah:NahLoadingTool:1.0'
+implementation 'com.github.joelnah:NahLoadingTool:1.1'
 
 
 
