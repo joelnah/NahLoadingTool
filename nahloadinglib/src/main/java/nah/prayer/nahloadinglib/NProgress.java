@@ -296,12 +296,12 @@ public class NProgress {
                 mIndeterminateView.setAnimationSpeed(mAnimateSpeed);
             }
 
-            if (TextUtils.isEmpty(mLabel)) {
+            if (!TextUtils.isEmpty(mLabel)) {
                 TextView labelText = findViewById(R.id.label);
                 labelText.setText(mLabel);
                 labelText.setVisibility(View.VISIBLE);
             }
-            if (TextUtils.isEmpty(mDetailsLabel)) {
+            if (!TextUtils.isEmpty(mDetailsLabel)) {
                 TextView detailsText = findViewById(R.id.details_label);
                 detailsText.setText(mDetailsLabel);
                 detailsText.setVisibility(View.VISIBLE);
