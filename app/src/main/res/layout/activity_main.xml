@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp">
+
+        <Button
+            android:onClick="MainClick"
+            android:id="@+id/indeterminate"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Indeterminate"/>
+
+        <Button
+            android:onClick="MainClick"
+            android:id="@+id/label_indeterminate"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="With label and cancellable"/>
+
+        <Button
+            android:onClick="MainClick"
+            android:id="@+id/detail_indeterminate"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="With details"/>
+
+        <Button
+            android:onClick="MainClick"
+            android:id="@+id/determinate"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Determinate"/>
+
+        <Button
+            android:onClick="MainClick"
+            android:id="@+id/annular_determinate"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Annular determinate"/>
+
+        <Button
+            android:onClick="MainClick"
+            android:id="@+id/bar_determinate"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Bar determinate"/>
+
+        <Button
+            android:onClick="MainClick"
+            android:id="@+id/custom_view"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Custom view"/>
+        <Button
+            android:onClick="MainClick"
+            android:id="@+id/custom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Custom Layout"/>
+
+        <Button
+            android:onClick="MainClick"
+            android:id="@+id/dim_background"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Dim background"/>
+
+        <Button
+            android:onClick="MainClick"
+            android:id="@+id/custom_color_animate"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Custom color and speed"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="----------------------Custom Layout---------------------"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <nah.prayer.nahloadinglib.CustomView.Wheel.ProgressWheel
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:matProg_barColor="@android:color/holo_orange_dark"
+                app:matProg_progressIndeterminate="true" />
+            <nah.prayer.nahloadinglib.CustomView.Bang.ProgressBangBang
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/ProgressStyle.Large"
+                android:layout_centerInParent="true"
+                app:indicatorName="nah.prayer.nahloadinglib.CustomView.Bang.ProgressBallMultipleIndicator"
+                app:indicatorColor="@android:color/holo_orange_dark" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
